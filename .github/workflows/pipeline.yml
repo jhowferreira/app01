@@ -1,4 +1,7 @@
 name: Teste Automatic
+
+
+on:  
   push:
     branches: [main]
   pull_request:
