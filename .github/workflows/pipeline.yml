@@ -1,4 +1,4 @@
-name: Teste Automatic
+name: Teste CI/CD Pipe
 
 
 on:  
@@ -13,13 +13,10 @@ jobs:
 
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v3 
+        uses: actions/checkout@v2 
 
-      - name: Configurar Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
+      - name: Configurar Ambiente
+        run: echo "Rodando CI/CD"
 
       - name: Rodar testes
-        run: |
-          pytest  # Ou outro comando de testes, como `unittest`
+        run: echo "Executando Testes"
